@@ -274,7 +274,6 @@
   "extensions.autoCheckUpdates": true,
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
-  "extensions.showRecommendationsOnlyOnDemand": true,
   "extensions.closeExtensionDetailsOnViewChange": false,
 
   // Prettier
