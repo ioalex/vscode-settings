@@ -150,7 +150,7 @@
   // Formatting
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.renameOnType": true,
+  "editor.linkedEditing": true,
   "javascript.preferences.quoteStyle": "double",
   "typescript.preferences.quoteStyle": "double",
   "files.eol": "\n",
