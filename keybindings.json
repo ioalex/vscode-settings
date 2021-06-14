@@ -10,21 +10,18 @@
     "when": "sideBarFocus"
   },
   {
-    // Unbind unconditional default
-    // https://stackoverflow.com/questions/49662075/is-there-a-shortcut-to-move-focus-to-the-sidebar-in-visual-studio-code
     "key": "ctrl+0",
     "command": "-workbench.action.focusSideBar"
   },
   {
-    // to ←
     "key": "ctrl+0",
     "when": "!sideBarFocus",
     "command": "workbench.action.focusSideBar"
   },
   {
-    // from →
     "key": "ctrl+0",
     "when": "sideBarFocus",
     "command": "workbench.action.focusActiveEditorGroup"
   }
 ]
+
