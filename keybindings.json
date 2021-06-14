@@ -1,27 +1,30 @@
 [
   {
-    "key": "ctrl+space",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+    "key": "ctrl+]",
+    "command": "workbench.action.nextSideBarView",
+    "when": "sideBarFocus"
   },
   {
-    "key": "ctrl+space",
-    "command": "toggleSuggestionDetails",
-    "when": "editorTextFocus && suggestWidgetVisible"
+    "key": "ctrl+[",
+    "command": "workbench.action.previousSideBarView",
+    "when": "sideBarFocus"
   },
   {
-    "key": "ctrl+alt+space",
-    "command": "toggleSuggestionFocus",
-    "when": "editorTextFocus && suggestWidgetVisible"
+    // Unbind unconditional default
+    // https://stackoverflow.com/questions/49662075/is-there-a-shortcut-to-move-focus-to-the-sidebar-in-visual-studio-code
+    "key": "ctrl+0",
+    "command": "-workbench.action.focusSideBar"
   },
   {
-    "key": "shift+cmd+g",
-    "command": "editor.action.goToTypeDefinition",
-    "when": "editorTextFocus && !editorReadonly"
+    // to ←
+    "key": "ctrl+0",
+    "when": "!sideBarFocus",
+    "command": "workbench.action.focusSideBar"
   },
   {
-    "key": "ctrl+cmd+=",
-    "command": "wwm.aligncode",
-    "when": "editorTextFocus && !editorReadonly"
+    // from →
+    "key": "ctrl+0",
+    "when": "sideBarFocus",
+    "command": "workbench.action.focusActiveEditorGroup"
   }
 ]
